@@ -1,0 +1,33 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+#wrapper-navbar .top-header-holder {
+  height: 260px;
+  background: #f1f1f1;
+}
+#wrapper-navbar #main-nav {
+  border-top: 1px solid rgba(93, 160, 170, 0.5);
+  border-bottom: 1px solid rgba(93, 160, 170, 0.5);
+}
+#wrapper-navbar #main-nav .menu-item a {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #223A47;
+  margin-right: 20px;
+}
+#wrapper-navbar #main-nav .menu-item:last-child {
+  margin-right: 0;
+}
+#wrapper-navbar #main-nav .menu-item.current-menu-item a {
+  color: #F27257;
+}
+
+.home-banner {
+  height: 1080px;
+  background-image: url("../../images/home-banner.jpg");
+  background-size: cover;
+}

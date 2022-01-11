@@ -1,0 +1,40 @@
+$primary-color: #223A47
+$secondary-color: #F27257
+
+// body styles
+body
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 18px
+  line-height: 1.25
+
+// header section styles
+#wrapper-navbar
+
+  .top-header-holder
+    height: 260px
+    background: #f1f1f1
+
+  #main-nav
+    border-top: 1px solid rgba(#5DA0AA, 0.5)
+    border-bottom: 1px solid rgba(#5DA0AA, 0.5)
+
+    .menu-item
+      a
+        font-weight: 600
+        font-size: 22px
+        text-transform: uppercase
+        color: $primary-color
+        margin-right: 20px
+
+      &:last-child
+        margin-right: 0
+
+      &.current-menu-item
+
+        a
+         color: $secondary-color
+
+.home-banner
+  height: 1080px
+  background-image: url('../../images/home-banner.jpg')
+  background-size: cover
