@@ -9,6 +9,8 @@ defined( 'ABSPATH' ) || exit;
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">        <?php wp_head(); ?>
+        <?php //ToDo: Replace in footer ?>
+        <script src="https://kit.fontawesome.com/fd03711f2b.js" crossorigin="anonymous"></script>
     </head>
 
 <body <?php body_class(); ?>>
@@ -16,7 +18,20 @@ defined( 'ABSPATH' ) || exit;
 <div class="site" id="page">
     <div id="wrapper-navbar">
         <div class="top-header-holder">
-
+            <div class="logo-holder">
+                <div class="logo"></div>
+            </div>
+            <div class="reservation-holder">
+                <div class="contact-holder">
+                    <div class="phone">08 9791 6575</div>
+                    <div class="address">Lot 757, Ocean Drive, Bunbury</div>
+                </div>
+                <div class="reservation-btn">Make a Reservation</div>
+            </div>
+            <div class="social-media-holder">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
         </div>
 
         <nav id="main-nav" class="navbar navbar-expand-lg">

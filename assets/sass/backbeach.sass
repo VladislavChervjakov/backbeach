@@ -9,6 +9,7 @@ body
 
 // header section styles
 #wrapper-navbar
+  margin-bottom: -360px
 
   .top-header-holder
     height: 260px
@@ -17,17 +18,20 @@ body
   #main-nav
     border-top: 1px solid rgba(#5DA0AA, 0.5)
     border-bottom: 1px solid rgba(#5DA0AA, 0.5)
+    padding: 0
+
+  #menu-primary
+    flex: 1
+    justify-content: space-between
 
     .menu-item
       a
+        display: inline-block
         font-weight: 600
         font-size: 22px
         text-transform: uppercase
         color: $primary-color
-        margin-right: 20px
-
-      &:last-child
-        margin-right: 0
+        padding: 1.5em 0.5em
 
       &.current-menu-item
 

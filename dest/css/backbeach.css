@@ -4,6 +4,9 @@ body {
   line-height: 1.25;
 }
 
+#wrapper-navbar {
+  margin-bottom: -360px;
+}
 #wrapper-navbar .top-header-holder {
   height: 260px;
   background: #f1f1f1;
@@ -11,18 +14,21 @@ body {
 #wrapper-navbar #main-nav {
   border-top: 1px solid rgba(93, 160, 170, 0.5);
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
+  padding: 0;
 }
-#wrapper-navbar #main-nav .menu-item a {
+#wrapper-navbar #menu-primary {
+  flex: 1;
+  justify-content: space-between;
+}
+#wrapper-navbar #menu-primary .menu-item a {
+  display: inline-block;
   font-weight: 600;
   font-size: 22px;
   text-transform: uppercase;
   color: #223A47;
-  margin-right: 20px;
+  padding: 1.5em 0.5em;
 }
-#wrapper-navbar #main-nav .menu-item:last-child {
-  margin-right: 0;
-}
-#wrapper-navbar #main-nav .menu-item.current-menu-item a {
+#wrapper-navbar #menu-primary .menu-item.current-menu-item a {
   color: #F27257;
 }
 
