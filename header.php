@@ -18,19 +18,39 @@ defined( 'ABSPATH' ) || exit;
 <div class="site" id="page">
     <div id="wrapper-navbar">
         <div class="top-header-holder">
-            <div class="logo-holder">
-                <div class="logo"></div>
-            </div>
-            <div class="reservation-holder">
-                <div class="contact-holder">
-                    <div class="phone">08 9791 6575</div>
-                    <div class="address">Lot 757, Ocean Drive, Bunbury</div>
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-md-4">
+                        <a href="/" class="logo-holder">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="275">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="reservation-holder">
+                            <div class="contact-holder">
+                                <a href="#" class="phone">
+                                    <i class="fa fa-phone"></i>
+                                    08 9791 6575
+                                </a>
+                                <a href="#" class="address">
+                                    <i class="fa fa-map"></i>
+                                    Lot 757, Ocean Drive, Bunbury
+                                </a>
+                                <div class="social-media-holder-tablet">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <a href="#" class="reservation-btn">Make a Reservation</a>
+                        </div>
+                    </div>
+                    <div class="col-">
+                        <div class="social-media-holder">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="reservation-btn">Make a Reservation</div>
-            </div>
-            <div class="social-media-holder">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
             </div>
         </div>
 

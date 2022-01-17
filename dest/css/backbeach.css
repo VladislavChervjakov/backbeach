@@ -10,6 +10,53 @@ body {
 #wrapper-navbar .top-header-holder {
   height: 260px;
   background: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#wrapper-navbar .top-header-holder .logo-holder {
+  display: block;
+}
+#wrapper-navbar .top-header-holder .social-media-holder {
+  font-size: 50px;
+}
+#wrapper-navbar .top-header-holder .social-media-holder a {
+  color: #F27257;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .social-media-holder a:hover {
+  color: #ea3812;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .social-media-holder {
+    display: none;
+  }
+}
+#wrapper-navbar .top-header-holder .contact-holder {
+  font-size: 18px;
+}
+#wrapper-navbar .top-header-holder .contact-holder a {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #223A47;
+}
+#wrapper-navbar .top-header-holder .contact-holder a i {
+  color: #F27257;
+}
+#wrapper-navbar .top-header-holder .reservation-btn {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 38px;
+  border: 1px dotted #F27257;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  transition: 0.25s ease all;
+  cursor: pointer;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .reservation-btn:hover {
+  background: #F27257;
+  color: #fff;
 }
 #wrapper-navbar #main-nav {
   border-top: 1px solid rgba(93, 160, 170, 0.5);
@@ -27,6 +74,12 @@ body {
   text-transform: uppercase;
   color: #223A47;
   padding: 1.5em 0.5em;
+}
+@media (max-width: 1440px) {
+  #wrapper-navbar #menu-primary .menu-item a {
+    font-size: 20px;
+    padding: 1em 0.33em;
+  }
 }
 #wrapper-navbar #menu-primary .menu-item.current-menu-item a {
   color: #F27257;
