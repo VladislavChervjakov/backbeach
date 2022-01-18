@@ -13,26 +13,49 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+#wrapper-navbar .top-header-holder .navbar-toggler {
+  border: 1px solid blue;
+  background-color: red;
+}
 #wrapper-navbar .top-header-holder .logo-holder {
   display: block;
 }
-#wrapper-navbar .top-header-holder .social-media-holder {
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .col-6 {
+    text-align: center;
+  }
+}
+#wrapper-navbar .top-header-holder .social-media-holder,
+#wrapper-navbar .top-header-holder .social-media-holder-tablet {
   font-size: 50px;
 }
-#wrapper-navbar .top-header-holder .social-media-holder a {
+#wrapper-navbar .top-header-holder .social-media-holder a,
+#wrapper-navbar .top-header-holder .social-media-holder-tablet a {
   color: #F27257;
   text-decoration: none;
 }
-#wrapper-navbar .top-header-holder .social-media-holder a:hover {
+#wrapper-navbar .top-header-holder .social-media-holder a:hover,
+#wrapper-navbar .top-header-holder .social-media-holder-tablet a:hover {
   color: #ea3812;
 }
 @media (max-width: 992px) {
-  #wrapper-navbar .top-header-holder .social-media-holder {
+  #wrapper-navbar .top-header-holder .social-media-holder,
+#wrapper-navbar .top-header-holder .social-media-holder-tablet {
     display: none;
+  }
+}
+#wrapper-navbar .top-header-holder .social-media-holder-tablet {
+  display: none;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .social-media-holder-tablet {
+    display: inline-block;
+    font-size: 18px;
   }
 }
 #wrapper-navbar .top-header-holder .contact-holder {
   font-size: 18px;
+  font-weight: 600;
 }
 #wrapper-navbar .top-header-holder .contact-holder a {
   display: inline-block;
@@ -40,8 +63,22 @@ body {
   margin-bottom: 1em;
   color: #223A47;
 }
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .contact-holder a {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
 #wrapper-navbar .top-header-holder .contact-holder a i {
   color: #F27257;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .contact-holder {
+    font-size: 16px;
+  }
+  #wrapper-navbar .top-header-holder .contact-holder .address {
+    display: none;
+  }
 }
 #wrapper-navbar .top-header-holder .reservation-btn {
   font-family: "Fredericka the Great", sans-serif;
@@ -57,6 +94,11 @@ body {
 #wrapper-navbar .top-header-holder .reservation-btn:hover {
   background: #F27257;
   color: #fff;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .reservation-btn {
+    font-size: 18px;
+  }
 }
 #wrapper-navbar #main-nav {
   border-top: 1px solid rgba(93, 160, 170, 0.5);

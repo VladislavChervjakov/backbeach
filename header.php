@@ -20,12 +20,12 @@ defined( 'ABSPATH' ) || exit;
         <div class="top-header-holder">
             <div class="container">
                 <div class="row align-items-end">
-                    <div class="col-md-4">
+                    <div class="col-4">
                         <a href="/" class="logo-holder">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="275">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="200">
                         </a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-6">
                         <div class="reservation-holder">
                             <div class="contact-holder">
                                 <a href="#" class="phone">
@@ -46,6 +46,13 @@ defined( 'ABSPATH' ) || exit;
                     </div>
                     <div class="col-">
                         <div class="social-media-holder">
+                            <button class="navbar-toggler" type="button"
+                                    data-toggle="collapse"
+                                    data-target="#navbarNavDropdown"
+                                    aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                         </div>
@@ -56,14 +63,6 @@ defined( 'ABSPATH' ) || exit;
 
         <nav id="main-nav" class="navbar navbar-expand-lg">
             <div class="container">
-                <button class="navbar-toggler" type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <?php
                 wp_nav_menu( [
                     'theme_location' => 'primary_menu',

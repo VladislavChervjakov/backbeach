@@ -24,21 +24,41 @@ body
     padding-top: 50px
     padding-bottom: 50px
 
+    .navbar-toggler
+      border: 1px solid blue
+      background-color: red
+
     .logo-holder
       display: block
 
-    .social-media-holder
+    .col-6
+      @media(max-width: $lg)
+        text-align: center
+
+    .social-media-holder,
+    .social-media-holder-tablet
       font-size: 50px
+
       a
         color: $secondary-color
         text-decoration: none
+
         &:hover
           color: darken($secondary-color, 15%)
-      @media( max-width: $lg )
+      @media(max-width: $lg)
         display: none
+
+    .social-media-holder-tablet
+      display: none
+
+      @media(max-width: $lg)
+        display: inline-block
+        font-size: 18px
+
 
     .contact-holder
       font-size: 18px
+      font-weight: 600
 
       a
         display: inline-block
@@ -46,8 +66,20 @@ body
         margin-bottom: 1em
         color: $primary-color
 
+        @media(max-width: $lg)
+          margin-right: 0.5em
+          margin-bottom: 0.5em
+
         i
           color: $secondary-color
+
+      @media(max-width: $lg)
+        font-size: 16px
+
+        .address
+          display: none
+
+
 
     .reservation-btn
       font-family: 'Fredericka the Great', sans-serif
@@ -63,6 +95,10 @@ body
       &:hover
         background: $secondary-color
         color: #fff
+
+      @media(max-width: $lg)
+        font-size: 18px
+
 
   #main-nav
     border-top: 1px solid rgba(#5DA0AA, 0.5)
