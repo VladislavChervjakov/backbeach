@@ -18,18 +18,51 @@ body
 #wrapper-navbar
   margin-bottom: -360px
 
+  @media(max-width: $lg)
+    margin-bottom: 0
+
   .top-header-holder
     height: 260px
-    background: #f1f1f1
     padding-top: 50px
     padding-bottom: 50px
 
+    @media(max-width: $lg)
+      padding-top: 30px
+      padding-bottom: 30px
+      height: auto
+
     .navbar-toggler
-      border: 1px solid blue
-      background-color: red
+      padding: 1em 1em 0
+      display: none
+
+      @media(max-width: $lg)
+        display: block
+
+      &:hover
+       background: rgba(#5DA0AA, 0.25)
+
+      .bar
+        height: 4px
+        border-radius: 4px
+        background: rgba(#5DA0AA, 0.5)
+        margin-bottom: 4px
+        width: 2em
+
+      .menu-title
+        font-size: 14px
+        margin-top: 2.5em
+        text-transform: uppercase
+        font-weight: 600
+
 
     .logo-holder
       display: block
+
+      img
+        width: 275px
+
+        @media(max-width: $lg)
+          width: 200px
 
     .col-6
       @media(max-width: $lg)
@@ -130,3 +163,7 @@ body
   height: 1080px
   background-image: url('../../images/home-banner.jpg')
   background-size: cover
+  background-position: bottom center
+
+  @media(max-width: $lg)
+    background-position: top -350px center

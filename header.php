@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
                 <div class="row align-items-end">
                     <div class="col-4">
                         <a href="/" class="logo-holder">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="200">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="">
                         </a>
                     </div>
                     <div class="col-6">
@@ -45,14 +45,17 @@ defined( 'ABSPATH' ) || exit;
                         </div>
                     </div>
                     <div class="col-">
+                        <button class="navbar-toggler" type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown"
+                                aria-expanded="false" >
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="menu-title">Menu</div>
+                        </button>
                         <div class="social-media-holder">
-                            <button class="navbar-toggler" type="button"
-                                    data-toggle="collapse"
-                                    data-target="#navbarNavDropdown"
-                                    aria-controls="navbarNavDropdown"
-                                    aria-expanded="false" >
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                         </div>

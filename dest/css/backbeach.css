@@ -7,18 +7,58 @@ body {
 #wrapper-navbar {
   margin-bottom: -360px;
 }
+@media (max-width: 992px) {
+  #wrapper-navbar {
+    margin-bottom: 0;
+  }
+}
 #wrapper-navbar .top-header-holder {
   height: 260px;
-  background: #f1f1f1;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+}
 #wrapper-navbar .top-header-holder .navbar-toggler {
-  border: 1px solid blue;
-  background-color: red;
+  padding: 1em 1em 0;
+  display: none;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .navbar-toggler {
+    display: block;
+  }
+}
+#wrapper-navbar .top-header-holder .navbar-toggler:hover {
+  background: rgba(93, 160, 170, 0.25);
+}
+#wrapper-navbar .top-header-holder .navbar-toggler .bar {
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(93, 160, 170, 0.5);
+  margin-bottom: 4px;
+  width: 2em;
+}
+#wrapper-navbar .top-header-holder .navbar-toggler .menu-title {
+  font-size: 14px;
+  margin-top: 2.5em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 #wrapper-navbar .top-header-holder .logo-holder {
   display: block;
+}
+#wrapper-navbar .top-header-holder .logo-holder img {
+  width: 275px;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .logo-holder img {
+    width: 200px;
+  }
 }
 @media (max-width: 992px) {
   #wrapper-navbar .top-header-holder .col-6 {
@@ -131,4 +171,10 @@ body {
   height: 1080px;
   background-image: url("../../images/home-banner.jpg");
   background-size: cover;
+  background-position: bottom center;
+}
+@media (max-width: 992px) {
+  .home-banner {
+    background-position: top -350px center;
+  }
 }
