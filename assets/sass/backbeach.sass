@@ -21,6 +21,20 @@ body
   @media(max-width: $lg)
     margin-bottom: 0
 
+  .mobile-logo-holder
+    text-align: center
+    display: none
+
+    @media(max-width: $md)
+      display: block
+
+    img
+      width: 66%
+      margin-top: 10px
+
+      @media(max-width: $sm)
+        width: 85%
+
   .top-header-holder
     height: 260px
     padding-top: 50px
@@ -30,6 +44,10 @@ body
       padding-top: 30px
       padding-bottom: 30px
       height: auto
+
+    @media(max-width: $md)
+      padding-top: 15px
+      padding-bottom: 15px
 
     .navbar-toggler
       padding: 1em 1em 0
@@ -54,6 +72,30 @@ body
         text-transform: uppercase
         font-weight: 600
 
+      &.md-view
+        display: none
+
+      @media(max-width: $md)
+        display: none
+
+        &.md-view
+          display: flex
+          padding: 0.5em
+          align-items: center
+          margin: -0.5em
+
+        .menu-title
+          margin-top: 0
+          margin-right: 0.7em
+          font-size: 18px
+
+        .bar
+          height: 3px
+          border-radius: 3px
+          background: rgba(#5DA0AA, 0.5)
+          margin-bottom: 3px
+          width: 1em
+
 
     .logo-holder
       display: block
@@ -63,6 +105,9 @@ body
 
         @media(max-width: $lg)
           width: 200px
+
+        @media(max-width: $md)
+          display: none
 
     .col-6
       @media(max-width: $lg)
@@ -88,10 +133,17 @@ body
         display: inline-block
         font-size: 18px
 
+      @media(max-width: $md)
+        display: none
+
 
     .contact-holder
       font-size: 18px
       font-weight: 600
+
+      @media(max-width: $md)
+        display: flex
+        justify-content: space-between
 
       a
         display: inline-block
@@ -103,6 +155,10 @@ body
           margin-right: 0.5em
           margin-bottom: 0.5em
 
+        @media(max-width: $md)
+          margin-right: 0
+          margin-bottom: 0
+
         i
           color: $secondary-color
 
@@ -111,6 +167,9 @@ body
 
         .address
           display: none
+
+      @media(max-width: $md)
+        font-size: 18px
 
 
 
@@ -131,6 +190,13 @@ body
 
       @media(max-width: $lg)
         font-size: 18px
+
+      @media(max-width: $md)
+        display: none
+
+        &.reservation-btn-mobile
+          display: block
+          margin-top: 10px
 
 
   #main-nav
@@ -163,7 +229,6 @@ body
   height: 1080px
   background-image: url('../../images/home-banner.jpg')
   background-size: cover
-  background-position: bottom center
 
   @media(max-width: $lg)
     background-position: top -350px center

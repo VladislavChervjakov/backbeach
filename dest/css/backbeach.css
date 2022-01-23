@@ -12,6 +12,24 @@ body {
     margin-bottom: 0;
   }
 }
+#wrapper-navbar .mobile-logo-holder {
+  text-align: center;
+  display: none;
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .mobile-logo-holder {
+    display: block;
+  }
+}
+#wrapper-navbar .mobile-logo-holder img {
+  width: 66%;
+  margin-top: 10px;
+}
+@media (max-width: 576px) {
+  #wrapper-navbar .mobile-logo-holder img {
+    width: 85%;
+  }
+}
 #wrapper-navbar .top-header-holder {
   height: 260px;
   padding-top: 50px;
@@ -22,6 +40,12 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 #wrapper-navbar .top-header-holder .navbar-toggler {
@@ -49,6 +73,32 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+#wrapper-navbar .top-header-holder .navbar-toggler.md-view {
+  display: none;
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .navbar-toggler {
+    display: none;
+  }
+  #wrapper-navbar .top-header-holder .navbar-toggler.md-view {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    margin: -0.5em;
+  }
+  #wrapper-navbar .top-header-holder .navbar-toggler .menu-title {
+    margin-top: 0;
+    margin-right: 0.7em;
+    font-size: 18px;
+  }
+  #wrapper-navbar .top-header-holder .navbar-toggler .bar {
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(93, 160, 170, 0.5);
+    margin-bottom: 3px;
+    width: 1em;
+  }
+}
 #wrapper-navbar .top-header-holder .logo-holder {
   display: block;
 }
@@ -58,6 +108,11 @@ body {
 @media (max-width: 992px) {
   #wrapper-navbar .top-header-holder .logo-holder img {
     width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .logo-holder img {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -93,9 +148,20 @@ body {
     font-size: 18px;
   }
 }
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .social-media-holder-tablet {
+    display: none;
+  }
+}
 #wrapper-navbar .top-header-holder .contact-holder {
   font-size: 18px;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .contact-holder {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 #wrapper-navbar .top-header-holder .contact-holder a {
   display: inline-block;
@@ -109,6 +175,12 @@ body {
     margin-bottom: 0.5em;
   }
 }
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .contact-holder a {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
 #wrapper-navbar .top-header-holder .contact-holder a i {
   color: #F27257;
 }
@@ -118,6 +190,11 @@ body {
   }
   #wrapper-navbar .top-header-holder .contact-holder .address {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .contact-holder {
+    font-size: 18px;
   }
 }
 #wrapper-navbar .top-header-holder .reservation-btn {
@@ -138,6 +215,15 @@ body {
 @media (max-width: 992px) {
   #wrapper-navbar .top-header-holder .reservation-btn {
     font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .reservation-btn {
+    display: none;
+  }
+  #wrapper-navbar .top-header-holder .reservation-btn.reservation-btn-mobile {
+    display: block;
+    margin-top: 10px;
   }
 }
 #wrapper-navbar #main-nav {
@@ -171,7 +257,6 @@ body {
   height: 1080px;
   background-image: url("../../images/home-banner.jpg");
   background-size: cover;
-  background-position: bottom center;
 }
 @media (max-width: 992px) {
   .home-banner {

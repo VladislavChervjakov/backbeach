@@ -20,12 +20,12 @@ defined( 'ABSPATH' ) || exit;
         <div class="top-header-holder">
             <div class="container">
                 <div class="row align-items-end">
-                    <div class="col-4">
+                    <div class="col-md-4">
                         <a href="/" class="logo-holder">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="">
                         </a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="reservation-holder">
                             <div class="contact-holder">
                                 <a href="#" class="phone">
@@ -40,6 +40,18 @@ defined( 'ABSPATH' ) || exit;
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </div>
+                                <button class="navbar-toggler md-view" type="button"
+                                        data-toggle="collapse"
+                                        data-target="#navbarNavDropdown"
+                                        aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" >
+                                    <div class="menu-title">Menu</div>
+                                    <div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </button>
                             </div>
                             <a href="#" class="reservation-btn">Make a Reservation</a>
                         </div>
@@ -60,6 +72,16 @@ defined( 'ABSPATH' ) || exit;
                             <a href="#"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="mobile-logo-holder">
+                <div>
+                    <a href="/" class="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="reservation-btn reservation-btn-mobile">Make a Reservation</a>
                 </div>
             </div>
         </div>
