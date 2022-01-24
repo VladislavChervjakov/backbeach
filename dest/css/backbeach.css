@@ -263,9 +263,75 @@ body {
   height: 1080px;
   background-image: url("../../images/home-banner.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 115px;
+}
+@media (max-width: 992px) {
+  .home-banner {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .home-banner {
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 576px) {
+  .home-banner {
+    padding-bottom: 60px;
+  }
+}
+.home-banner:after {
+  content: "";
+  display: block;
+  height: 185px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+}
+@media (max-width: 992px) {
+  .home-banner:after {
+    height: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .home-banner:after {
+    height: 150px;
+  }
+}
+@media (max-width: 992px) {
+  .home-banner:after {
+    height: 125px;
+  }
 }
 @media (max-width: 992px) {
   .home-banner {
     background-position: top -350px center;
+    height: 800px;
+  }
+}
+.home-banner h1 {
+  font-size: 100px;
+  font-family: "Fredericka the Great", sans-serif;
+  position: relative;
+  z-index: 999;
+}
+@media (max-width: 992px) {
+  .home-banner h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 992px) {
+  .home-banner h1 {
+    font-size: 48px;
+  }
+}
+@media (max-width: 992px) {
+  .home-banner h1 {
+    font-size: 36px;
   }
 }
