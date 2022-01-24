@@ -4,30 +4,61 @@ body {
   line-height: 1.25;
 }
 
+.mobile-logo-holder {
+  text-align: center;
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-logo-holder {
+    display: block;
+  }
+}
+.mobile-logo-holder img {
+  width: 66%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 576px) {
+  .mobile-logo-holder img {
+    width: 85%;
+  }
+}
+
+.reservation-btn {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 38px;
+  border: 1px dotted #F27257;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  transition: 0.25s ease all;
+  cursor: pointer;
+  text-decoration: none;
+}
+.reservation-btn:hover {
+  background: #F27257;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .reservation-btn {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation-btn {
+    display: none;
+  }
+  .reservation-btn.reservation-btn-mobile {
+    display: block;
+  }
+}
+
 #wrapper-navbar {
   margin-bottom: -360px;
 }
 @media (max-width: 992px) {
   #wrapper-navbar {
     margin-bottom: 0;
-  }
-}
-#wrapper-navbar .mobile-logo-holder {
-  text-align: center;
-  display: none;
-}
-@media (max-width: 768px) {
-  #wrapper-navbar .mobile-logo-holder {
-    display: block;
-  }
-}
-#wrapper-navbar .mobile-logo-holder img {
-  width: 66%;
-  margin-top: 10px;
-}
-@media (max-width: 576px) {
-  #wrapper-navbar .mobile-logo-holder img {
-    width: 85%;
   }
 }
 #wrapper-navbar .top-header-holder {
@@ -197,39 +228,14 @@ body {
     font-size: 18px;
   }
 }
-#wrapper-navbar .top-header-holder .reservation-btn {
-  font-family: "Fredericka the Great", sans-serif;
-  font-size: 38px;
-  border: 1px dotted #F27257;
-  display: inline-block;
-  padding: 0.25em 0.5em;
-  border-radius: 0.25em;
-  transition: 0.25s ease all;
-  cursor: pointer;
-  text-decoration: none;
-}
-#wrapper-navbar .top-header-holder .reservation-btn:hover {
-  background: #F27257;
-  color: #fff;
-}
-@media (max-width: 992px) {
-  #wrapper-navbar .top-header-holder .reservation-btn {
-    font-size: 18px;
-  }
-}
-@media (max-width: 768px) {
-  #wrapper-navbar .top-header-holder .reservation-btn {
-    display: none;
-  }
-  #wrapper-navbar .top-header-holder .reservation-btn.reservation-btn-mobile {
-    display: block;
-    margin-top: 10px;
-  }
-}
 #wrapper-navbar #main-nav {
-  border-top: 1px solid rgba(93, 160, 170, 0.5);
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
   padding: 0;
+}
+@media (max-width: 768px) {
+  #wrapper-navbar #main-nav {
+    border-top: 0;
+  }
 }
 #wrapper-navbar #menu-primary {
   flex: 1;

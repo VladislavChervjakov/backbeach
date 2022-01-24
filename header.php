@@ -74,16 +74,6 @@ defined( 'ABSPATH' ) || exit;
                     </div>
                 </div>
             </div>
-            <div class="mobile-logo-holder">
-                <div>
-                    <a href="/" class="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#" class="reservation-btn reservation-btn-mobile">Make a Reservation</a>
-                </div>
-            </div>
         </div>
 
         <nav id="main-nav" class="navbar navbar-expand-lg">
@@ -102,3 +92,15 @@ defined( 'ABSPATH' ) || exit;
             </div>
         </nav>
 </div><!-- #wrapper-navbar end -->
+<div class="container">
+    <div class="mobile-logo-holder">
+        <div>
+            <a href="/" class="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="">
+            </a>
+        </div>
+
+        <a href="#" class="reservation-btn reservation-btn-mobile">Make a Reservation</a>
+
+    </div>
+</div>

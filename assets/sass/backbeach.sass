@@ -15,25 +15,54 @@ body
   line-height: 1.25
 
 // header section styles
+
+.mobile-logo-holder
+  text-align: center
+  display: none
+
+  @media(max-width: $md)
+    display: block
+
+  img
+    width: 66%
+    margin-top: 10px
+    margin-bottom: 10px
+
+    @media(max-width: $sm)
+      width: 85%
+
+.reservation-btn
+  font-family: 'Fredericka the Great', sans-serif
+  font-size: 38px
+  border: 1px dotted $secondary-color
+  display: inline-block
+  padding: 0.25em 0.5em
+  border-radius: 0.25em
+  transition: 0.25s ease all
+  cursor: pointer
+  text-decoration: none
+
+  &:hover
+    background: $secondary-color
+    color: #fff
+
+  @media(max-width: $lg)
+    font-size: 18px
+
+  @media(max-width: $md)
+    display: none
+
+    &.reservation-btn-mobile
+      display: block
+      //width: 85%
+      //margin: 10px auto 0
+
+
 #wrapper-navbar
   margin-bottom: -360px
 
   @media(max-width: $lg)
     margin-bottom: 0
-
-  .mobile-logo-holder
-    text-align: center
-    display: none
-
-    @media(max-width: $md)
-      display: block
-
-    img
-      width: 66%
-      margin-top: 10px
-
-      @media(max-width: $sm)
-        width: 85%
 
   .top-header-holder
     height: 260px
@@ -172,37 +201,13 @@ body
         font-size: 18px
 
 
-
-    .reservation-btn
-      font-family: 'Fredericka the Great', sans-serif
-      font-size: 38px
-      border: 1px dotted $secondary-color
-      display: inline-block
-      padding: 0.25em 0.5em
-      border-radius: 0.25em
-      transition: 0.25s ease all
-      cursor: pointer
-      text-decoration: none
-
-      &:hover
-        background: $secondary-color
-        color: #fff
-
-      @media(max-width: $lg)
-        font-size: 18px
-
-      @media(max-width: $md)
-        display: none
-
-        &.reservation-btn-mobile
-          display: block
-          margin-top: 10px
-
-
   #main-nav
-    border-top: 1px solid rgba(#5DA0AA, 0.5)
     border-bottom: 1px solid rgba(#5DA0AA, 0.5)
     padding: 0
+
+    @media(max-width: $md)
+      border-top: 0
+
 
   #menu-primary
     flex: 1
