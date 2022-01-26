@@ -2,11 +2,14 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   line-height: 1.25;
+  height: 8000px;
 }
 
 .mobile-logo-holder {
   text-align: center;
   display: none;
+  position: relative;
+  z-index: 2000;
 }
 @media (max-width: 768px) {
   .mobile-logo-holder {
@@ -55,6 +58,8 @@ body {
 
 #wrapper-navbar {
   margin-bottom: -360px;
+  position: relative;
+  z-index: 2000;
 }
 @media (max-width: 992px) {
   #wrapper-navbar {
@@ -261,39 +266,53 @@ body {
 
 .home-banner {
   height: 1080px;
+  position: relative;
   background-image: url("../../images/home-banner.jpg");
+  background-position: top center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 115px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   .home-banner {
     padding-bottom: 100px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .home-banner {
     padding-bottom: 75px;
+    margin-top: -200px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .home-banner {
     padding-bottom: 60px;
+    margin-top: -100px;
   }
+}
+.home-banner:before {
+  content: "";
+  display: block;
+  height: 230px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
 }
 .home-banner:after {
   content: "";
   display: block;
-  height: 185px;
+  height: 230px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
   position: absolute;
   right: 0;
   left: 0;
-  top: 100%;
+  bottom: 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   .home-banner:after {
     height: 200px;
   }
@@ -303,15 +322,24 @@ body {
     height: 150px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .home-banner:after {
     height: 125px;
   }
 }
 @media (max-width: 992px) {
   .home-banner {
-    background-position: top -350px center;
-    height: 800px;
+    height: 650px;
+  }
+}
+@media (max-width: 768px) {
+  .home-banner {
+    height: 450px;
+  }
+}
+@media (max-width: 576px) {
+  .home-banner {
+    height: 300px;
   }
 }
 .home-banner h1 {
@@ -320,17 +348,22 @@ body {
   position: relative;
   z-index: 999;
 }
+@media (max-width: 1440px) {
+  .home-banner h1 {
+    font-size: 90px;
+  }
+}
 @media (max-width: 992px) {
   .home-banner h1 {
     font-size: 72px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .home-banner h1 {
     font-size: 48px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .home-banner h1 {
     font-size: 36px;
   }

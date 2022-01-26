@@ -13,11 +13,14 @@ body
   font-family: 'Source Sans Pro', sans-serif
   font-size: 18px
   line-height: 1.25
+  height: 8000px
 
 // header section styles
 .mobile-logo-holder
   text-align: center
   display: none
+  position: relative
+  z-index: 2000
 
   @media(max-width: $md)
     display: block
@@ -57,6 +60,8 @@ body
 
 #wrapper-navbar
   margin-bottom: -360px
+  position: relative
+  z-index: 2000
 
   @media(max-width: $lg)
     margin-bottom: 0
@@ -230,44 +235,63 @@ body
 // home banner styles
 .home-banner
   height: 1080px
+  position: relative
   background-image: url('../../images/home-banner.jpg')
+  background-position: top center
   background-size: cover
   display: flex
   flex-direction: column
   justify-content: flex-end
   padding-bottom: 115px
 
-  @media(max-width: $lg)
+  @media(max-width: $xl)
     padding-bottom: 100px
 
-  @media(max-width: $md)
+  @media(max-width: $lg)
     padding-bottom: 75px
+    margin-top: -200px
 
-  @media(max-width: $sm)
+  @media(max-width: $md)
     padding-bottom: 60px
+    margin-top: -100px
+
+  &:before
+    content: ''
+    display: block
+    height: 230px
+    background: linear-gradient(to top, rgba(white, 0), rgba(white, 1))
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
 
   &:after
     content: ''
     display: block
-    height: 185px
+    height: 230px
     background: linear-gradient(to bottom, rgba(white, 0), rgba(white, 1))
     position: absolute
     right: 0
     left: 0
-    top: 100%
+    bottom: 0
 
-    @media(max-width: $lg)
+    @media(max-width: $xl)
       height: 200px
 
     @media(max-width: $lg)
       height: 150px
 
-    @media(max-width: $lg)
+    @media(max-width: $md)
       height: 125px
 
   @media(max-width: $lg)
-    background-position: top -350px center
-    height: 800px
+    height: 650px
+
+  @media(max-width: $md)
+    height: 450px
+
+  @media(max-width: $sm)
+    height: 300px
 
   h1
     font-size: 100px
@@ -275,11 +299,14 @@ body
     position: relative
     z-index: 999
 
+    @media(max-width: $xl)
+      font-size: 90px
+
     @media(max-width: $lg)
       font-size: 72px
 
-    @media(max-width: $lg)
+    @media(max-width: $md)
       font-size: 48px
 
-    @media(max-width: $lg)
+    @media(max-width: $sm)
       font-size: 36px
