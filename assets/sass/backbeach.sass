@@ -17,6 +17,32 @@ body
   line-height: 1.25
   height: 8000px
 
+//  Button styles
+.button
+  font-size: 1.4em
+  padding: 0.25em 0.75em
+  background-color: $primary-color
+  color: #fff
+  border: 2px dashed #fff
+  border-radius: 0.25em
+  transition: all ease 0.25s
+  font-family: 'Fredericka the Great', sans-serif
+  cursor: pointer
+  position: relative
+
+  i
+    position: absolute
+    right: 1em
+    top: 50%
+    transform: translateY(-50%)
+    line-height: 1
+
+  &:hover
+    background-color: $primary-color-300
+
+  @media(max-width: $xl)
+    font-size: 20px
+
 // header section styles
 .mobile-logo-holder
   text-align: center
@@ -419,11 +445,28 @@ body
 // Home welcome
 .home-welcome
   margin-top: 120px
+  margin-bottom: 120px
+
+  @media(max-width: $md)
+    padding-bottom: 60px
+    margin-bottom: 60px
+
+  @media(max-width: $sm)
+    padding-bottom: 30px
+    margin-bottom: 30px
 
   .title-holder
     padding-bottom: 60px
     border-bottom: 1px solid rgb($primary-color-300, 0.5)
     margin-bottom: 60px
+
+    @media(max-width: $md)
+      padding-bottom: 20px
+      margin-bottom: 20px
+
+    @media(max-width: $sm)
+      padding-bottom: 15px
+      margin-bottom: 15px
 
   h2
     line-height: 1
@@ -435,36 +478,43 @@ body
       color: $secondary-color-300
       transform: translate(140px, -30px)
 
+      @media(max-width: $lg)
+        font-size: 120px
+        transform: translate(120px, -25px)
+
+      @media(max-width: $md)
+        font-size: 60px
+        transform: translate(60px, 0px)
+
+      @media(max-width: $sm)
+        font-size: 48px
+        transform: translate(30px, 0px)
+
     font-family: 'Fredericka the Great', sans-serif
     font-size: 72px
 
+    @media(max-width: $xl)
+      font-size: 60px
+
+    @media(max-width: $lg)
+      font-size: 36px
+
   p
+    line-height: 2em
+    padding-bottom: 1em
+    font-weight: 300
 
     &.tagline
       font-size: 24px
       color: $primary-color-300
       font-weight: 600
+      line-height: 1.5
 
-.button
-  font-size: 28px
-  padding: 0.25em
-  background-color: $primary-color
-  color: #fff
-  border: 2px dashed #fff
-  border-radius: 0.25em
-  transition: all ease 0.25s
-  font-family: 'Fredericka the Great', sans-serif
-  cursor: pointer
-  position: relative
+      @media(max-width: $lg)
+        font-size: 18px
 
-  i
-    position: absolute
-    right: 1em
-    top: 50%
-    transform: translateY(-50%)
+  .button
 
-  &:hover
-    background-color: $primary-color-300
-
-  @media(max-width: $xl)
-    font-size: 20px
+    @media(max-width: $md)
+      display: inline-block
+      padding-right: 2.5em

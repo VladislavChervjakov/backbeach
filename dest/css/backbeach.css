@@ -5,6 +5,34 @@ body {
   height: 8000px;
 }
 
+.button {
+  font-size: 1.4em;
+  padding: 0.25em 0.75em;
+  background-color: #223A47;
+  color: #fff;
+  border: 2px dashed #fff;
+  border-radius: 0.25em;
+  transition: all ease 0.25s;
+  font-family: "Fredericka the Great", sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+.button i {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+}
+.button:hover {
+  background-color: #5DA0AA;
+}
+@media (max-width: 1440px) {
+  .button {
+    font-size: 20px;
+  }
+}
+
 .mobile-logo-holder {
   text-align: center;
   display: none;
@@ -483,11 +511,36 @@ body {
 
 .home-welcome {
   margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media (max-width: 768px) {
+  .home-welcome {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .home-welcome {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
 }
 .home-welcome .title-holder {
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
   margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .home-welcome .title-holder {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .home-welcome .title-holder {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
 }
 .home-welcome h2 {
   line-height: 1;
@@ -501,35 +554,53 @@ body {
   color: #FFB5A6;
   transform: translate(140px, -30px);
 }
+@media (max-width: 992px) {
+  .home-welcome h2 span {
+    font-size: 120px;
+    transform: translate(120px, -25px);
+  }
+}
+@media (max-width: 768px) {
+  .home-welcome h2 span {
+    font-size: 60px;
+    transform: translate(60px, 0px);
+  }
+}
+@media (max-width: 576px) {
+  .home-welcome h2 span {
+    font-size: 48px;
+    transform: translate(30px, 0px);
+  }
+}
+@media (max-width: 1440px) {
+  .home-welcome h2 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .home-welcome h2 {
+    font-size: 36px;
+  }
+}
+.home-welcome p {
+  line-height: 2em;
+  padding-bottom: 1em;
+  font-weight: 300;
+}
 .home-welcome p.tagline {
   font-size: 24px;
   color: #5DA0AA;
   font-weight: 600;
+  line-height: 1.5;
 }
-
-.button {
-  font-size: 28px;
-  padding: 0.25em;
-  background-color: #223A47;
-  color: #fff;
-  border: 2px dashed #fff;
-  border-radius: 0.25em;
-  transition: all ease 0.25s;
-  font-family: "Fredericka the Great", sans-serif;
-  cursor: pointer;
-  position: relative;
+@media (max-width: 992px) {
+  .home-welcome p.tagline {
+    font-size: 18px;
+  }
 }
-.button i {
-  position: absolute;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.button:hover {
-  background-color: #5DA0AA;
-}
-@media (max-width: 1440px) {
-  .button {
-    font-size: 20px;
+@media (max-width: 768px) {
+  .home-welcome .button {
+    display: inline-block;
+    padding-right: 2.5em;
   }
 }
