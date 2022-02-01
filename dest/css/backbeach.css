@@ -609,3 +609,48 @@ body {
     padding-right: 2.5em;
   }
 }
+
+.home-news {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.home-news h2 {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 60px;
+  margin-bottom: 0.5em;
+  color: #F27257;
+}
+.home-news p {
+  line-height: 2;
+  font-weight: 300;
+}
+.home-news .bg-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../images/news-bg.jpg");
+  opacity: 0.5;
+}
+.home-news .bg-image:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+.home-news .bg-image:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 200px;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, transparent, white);
+}

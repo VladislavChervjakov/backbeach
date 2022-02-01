@@ -75,6 +75,32 @@ get_header();
     </div>
 </div>
 
+<div class="home-news">
+    <div class="bg-image"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="#" class="news-img">
+                    <div class="image"></div>
+                    <div class="date">Date</div>
+                    <div class="category">Category</div>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <h2>Mother`s Day</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum libero optio, quas rerum sunt
+                    vel voluptatum. A animi cum cupiditate dolore enim exercitationem illo incidunt ipsa ipsum iusto
+                    nihil non officia, placeat provident, quas quis sint soluta tempora voluptate, voluptatum!
+                    Architecto, ipsa, ipsam...
+                </p>
+                <div class="button">
+                    Read More <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php
 get_footer();
