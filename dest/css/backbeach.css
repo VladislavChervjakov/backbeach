@@ -12,7 +12,6 @@ body {
 
 .button {
   font-size: 1.4em;
-  padding: 0.25em 0.75em;
   background-color: #223A47;
   color: #fff;
   border: 2px dashed #fff;
@@ -21,6 +20,8 @@ body {
   font-family: "Fredericka the Great", sans-serif;
   cursor: pointer;
   position: relative;
+  display: inline-block;
+  padding: 0.25em 2.5em 0.25em 0.75em;
 }
 .button i {
   position: absolute;
@@ -31,6 +32,7 @@ body {
 }
 .button:hover {
   background-color: #5DA0AA;
+  text-decoration: none;
 }
 @media (max-width: 1440px) {
   .button {
@@ -603,17 +605,17 @@ body {
     font-size: 18px;
   }
 }
-@media (max-width: 768px) {
-  .home-welcome .button {
-    display: inline-block;
-    padding-right: 2.5em;
-  }
-}
 
 .home-news {
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative;
+}
+@media (max-width: 1440px) {
+  .home-news {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .home-news h2 {
   font-family: "Fredericka the Great", sans-serif;
@@ -644,6 +646,11 @@ body {
   right: 0;
   background: #fff;
 }
+@media (max-width: 1440px) {
+  .home-news .bg-image:before {
+    height: 100px;
+  }
+}
 .home-news .bg-image:after {
   content: "";
   position: absolute;
@@ -653,4 +660,112 @@ body {
   left: 0;
   right: 0;
   background: linear-gradient(to bottom, transparent, white);
+}
+@media (max-width: 1440px) {
+  .home-news .bg-image:after {
+    height: 100px;
+    bottom: 100px;
+  }
+}
+.home-news .news-img {
+  border-radius: 50%;
+  background: #223A47;
+  padding-bottom: 100%;
+  position: relative;
+  display: block;
+}
+@media (max-width: 768px) {
+  .home-news .news-img {
+    width: 66%;
+    padding-bottom: 66%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .home-news .news-img {
+    width: 85%;
+    padding-bottom: 85%;
+  }
+}
+.home-news .news-img .image {
+  background-image: url("../../images/news-placeholder.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  transition: all ease 0.25s;
+  opacity: 0.85;
+}
+@media (max-width: 1440px) {
+  .home-news .news-img .image {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.home-news .news-img .date,
+.home-news .news-img .category {
+  font-size: 28px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 0.5em 2em;
+  background-color: #5DA0AA;
+  color: #fff;
+  border: 2px dashed #fff;
+  border-radius: 0.25em;
+  transition: all ease 0.25s;
+  font-family: "Fredericka the Great", sans-serif;
+}
+@media (max-width: 992px) {
+  .home-news .news-img .date,
+.home-news .news-img .category {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .home-news .news-img .date,
+.home-news .news-img .category {
+    font-size: 18px;
+    padding: 0.5em;
+    margin-left: -0.5em;
+  }
+}
+.home-news .news-img .date.category,
+.home-news .news-img .category.category {
+  bottom: initial;
+  top: 15px;
+  background: #F27257;
+}
+.home-news .news-img:hover .title {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #223A47;
+}
+.home-news .news-img:hover .image {
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 1;
+}
+.home-news .button {
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .home-news .button {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .home-news .button {
+    margin-top: 30px;
+  }
 }

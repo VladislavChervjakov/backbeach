@@ -78,14 +78,15 @@ get_header();
 <div class="home-news">
     <div class="bg-image"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row align-items-center">
+            <div class="col-xl-5 col-md-6">
                 <a href="#" class="news-img">
                     <div class="image"></div>
-                    <div class="date">Date</div>
-                    <div class="category">Category</div>
+                    <div class="date">Sun 13 May</div>
+                    <div class="category">What's on</div>
                 </a>
             </div>
+            <div class="col-xl-1 d-none d-xl-block"></div>
             <div class="col-lg-6">
                 <h2>Mother`s Day</h2>
                 <p>
@@ -94,9 +95,9 @@ get_header();
                     nihil non officia, placeat provident, quas quis sint soluta tempora voluptate, voluptatum!
                     Architecto, ipsa, ipsam...
                 </p>
-                <div class="button">
+                <a href="#" class="button">
                     Read More <i class="fa fa-chevron-right"></i>
-                </div>
+                </a>
             </div>
         </div>
     </div>
