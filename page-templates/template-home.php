@@ -103,5 +103,38 @@ get_header();
     </div>
 </div>
 
+<div class="home-about">
+    <div class="bg-image"></div>
+    <div class="title-holder">
+        <div class="container">
+            <h2>
+                <span>Served fresh</span>
+                from the paddock to the plate
+            </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8">
+                <p class="tagline">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aperiam at consequuntur cupiditate dicta dolorem excepturi expedita.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut doloremque provident.
+                    Dicta, dignissimos eaque expedita explicabo iusto nulla reiciendis repellendus sunt!
+                    Consequuntur cumque et fugiat inventore minima molestiae non omnis perspiciatis sed voluptate.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <div class="button">
+                    Read More <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
 get_footer();

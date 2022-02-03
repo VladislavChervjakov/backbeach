@@ -516,45 +516,53 @@ body {
   opacity: 1;
 }
 
-.home-welcome {
+.home-welcome,
+.home-about {
   margin-top: 120px;
   margin-bottom: 120px;
 }
 @media (max-width: 768px) {
-  .home-welcome {
+  .home-welcome,
+.home-about {
     padding-bottom: 60px;
     margin-bottom: 60px;
   }
 }
 @media (max-width: 576px) {
-  .home-welcome {
+  .home-welcome,
+.home-about {
     padding-bottom: 30px;
     margin-bottom: 30px;
   }
 }
-.home-welcome .title-holder {
+.home-welcome .title-holder,
+.home-about .title-holder {
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
   margin-bottom: 60px;
 }
 @media (max-width: 768px) {
-  .home-welcome .title-holder {
+  .home-welcome .title-holder,
+.home-about .title-holder {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 576px) {
-  .home-welcome .title-holder {
+  .home-welcome .title-holder,
+.home-about .title-holder {
     padding-bottom: 15px;
     margin-bottom: 15px;
   }
 }
-.home-welcome h2 {
+.home-welcome h2,
+.home-about h2 {
   line-height: 1;
   font-family: "Fredericka the Great", sans-serif;
   font-size: 72px;
 }
-.home-welcome h2 span {
+.home-welcome h2 span,
+.home-about h2 span {
   font-family: "Pacifico", sans-serif;
   font-size: 160px;
   display: block;
@@ -562,48 +570,70 @@ body {
   transform: translate(140px, -30px);
 }
 @media (max-width: 992px) {
-  .home-welcome h2 span {
+  .home-welcome h2 span,
+.home-about h2 span {
     font-size: 120px;
     transform: translate(120px, -25px);
   }
 }
 @media (max-width: 768px) {
-  .home-welcome h2 span {
+  .home-welcome h2 span,
+.home-about h2 span {
     font-size: 60px;
     transform: translate(60px, 0px);
   }
 }
 @media (max-width: 576px) {
-  .home-welcome h2 span {
+  .home-welcome h2 span,
+.home-about h2 span {
     font-size: 48px;
     transform: translate(30px, 0px);
   }
 }
 @media (max-width: 1440px) {
-  .home-welcome h2 {
+  .home-welcome h2,
+.home-about h2 {
     font-size: 60px;
   }
 }
 @media (max-width: 992px) {
-  .home-welcome h2 {
+  .home-welcome h2,
+.home-about h2 {
     font-size: 36px;
   }
 }
-.home-welcome p {
+.home-welcome p,
+.home-about p {
   line-height: 2em;
   padding-bottom: 1em;
   font-weight: 300;
 }
-.home-welcome p.tagline {
+.home-welcome p.tagline,
+.home-about p.tagline {
   font-size: 24px;
   color: #5DA0AA;
   font-weight: 600;
   line-height: 1.5;
 }
 @media (max-width: 992px) {
-  .home-welcome p.tagline {
+  .home-welcome p.tagline,
+.home-about p.tagline {
     font-size: 18px;
   }
+}
+.home-welcome.home-about,
+.home-about.home-about {
+  position: relative;
+}
+.home-welcome.home-about .bg-image,
+.home-about.home-about .bg-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../images/about-background.jpg");
+  background-size: cover;
 }
 
 .home-news {

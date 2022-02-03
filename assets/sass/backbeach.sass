@@ -450,7 +450,8 @@ body
         opacity: 1
 
 // home welcome
-.home-welcome
+.home-welcome,
+.home-about
   margin-top: 120px
   margin-bottom: 120px
 
@@ -519,6 +520,18 @@ body
 
       @media(max-width: $lg)
         font-size: 18px
+
+  &.home-about
+    position: relative
+
+    .bg-image
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background-image: url("../../images/about-background.jpg")
+      background-size: cover
 
 // home news styles
 .home-news
