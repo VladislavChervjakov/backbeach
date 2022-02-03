@@ -87,7 +87,7 @@ get_header();
                 </a>
             </div>
             <div class="col-xl-1 d-none d-xl-block"></div>
-            <div class="col-lg-6">
+            <div class="col-md-6">
                 <h2>Mother`s Day</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum libero optio, quas rerum sunt
