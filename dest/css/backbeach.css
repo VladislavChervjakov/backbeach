@@ -624,6 +624,53 @@ body {
 .home-welcome.home-about,
 .home-about.home-about {
   position: relative;
+  padding-top: 150px;
+  padding-bottom: 300px;
+  margin-top: 0;
+}
+@media (max-width: 992px) {
+  .home-welcome.home-about,
+.home-about.home-about {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .home-welcome.home-about,
+.home-about.home-about {
+    padding-top: 75px;
+    padding-bottom: 125px;
+  }
+}
+@media (max-width: 576px) {
+  .home-welcome.home-about,
+.home-about.home-about {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+.home-welcome.home-about h2,
+.home-about.home-about h2 {
+  color: #fff;
+  position: relative;
+}
+.home-welcome.home-about .title-holder,
+.home-about.home-about .title-holder {
+  border-bottom: 1px solid rgba(93, 160, 170, 0.5);
+  position: relative;
+}
+.home-welcome.home-about .title-holder span,
+.home-about.home-about .title-holder span {
+  color: #5DA0AA;
+  transform: translate(100px, -25px);
+}
+.home-welcome.home-about p,
+.home-about.home-about p {
+  color: #fff;
+}
+.home-welcome.home-about p.tagline,
+.home-about.home-about p.tagline {
+  color: #5DA0AA;
 }
 .home-welcome.home-about .bg-image,
 .home-about.home-about .bg-image {
@@ -634,6 +681,29 @@ body {
   right: 0;
   background-image: url("../../images/about-background.jpg");
   background-size: cover;
+}
+.home-welcome.home-about .bg-image .top-overlay,
+.home-about.home-about .bg-image .top-overlay {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.home-welcome.home-about .bg-image .bottom-overlay,
+.home-about.home-about .bg-image .bottom-overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: -3px;
+}
+.home-welcome.home-about .button,
+.home-about.home-about .button {
+  background: #F27257;
+}
+.home-welcome.home-about .button:hover,
+.home-about.home-about .button:hover {
+  background: #ea3812;
 }
 
 .home-news {

@@ -104,7 +104,14 @@ get_header();
 </div>
 
 <div class="home-about">
-    <div class="bg-image"></div>
+    <div class="bg-image">
+        <div class="top-overlay">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/vector-top.svg" alt="Cutout Top" width="100%">
+        </div>
+        <div class="bottom-overlay">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/vector-bottom.svg" alt="Cutout Bottom" width="100%">
+        </div>
+    </div>
     <div class="title-holder">
         <div class="container">
             <h2>
