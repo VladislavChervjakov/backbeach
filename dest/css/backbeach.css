@@ -404,12 +404,37 @@ body {
   }
 }
 
+.home-call-to-action.home-about-images,
+.home-about-images.home-about-images {
+  transform: translateY(-75%);
+}
+@media (max-width: 1440px) {
+  .home-call-to-action.home-about-images,
+.home-about-images.home-about-images {
+    transform: translateY(-100%);
+  }
+}
+@media (max-width: 992px) {
+  .home-call-to-action.home-about-images,
+.home-about-images.home-about-images {
+    transform: translateY(-115%);
+  }
+}
 @media (max-width: 768px) {
-  .home-call-to-action {
+  .home-call-to-action.home-about-images,
+.home-about-images.home-about-images {
+    display: none;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .home-call-to-action,
+.home-about-images {
     text-align: center;
   }
 }
-.home-call-to-action .call-to-action {
+.home-call-to-action .call-to-action,
+.home-about-images .call-to-action {
   border-radius: 50%;
   background: #F27257;
   padding-bottom: 100%;
@@ -417,7 +442,8 @@ body {
   display: block;
 }
 @media (max-width: 768px) {
-  .home-call-to-action .call-to-action {
+  .home-call-to-action .call-to-action,
+.home-about-images .call-to-action {
     width: 66%;
     padding-bottom: 66%;
     display: inline-block;
@@ -425,12 +451,14 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .home-call-to-action .call-to-action {
+  .home-call-to-action .call-to-action,
+.home-about-images .call-to-action {
     width: 85%;
     padding-bottom: 85%;
   }
 }
-.home-call-to-action .call-to-action .image {
+.home-call-to-action .call-to-action .image,
+.home-about-images .call-to-action .image {
   background-image: url("../../images/call-to-action-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -444,14 +472,16 @@ body {
   opacity: 0.85;
 }
 @media (max-width: 1440px) {
-  .home-call-to-action .call-to-action .image {
+  .home-call-to-action .call-to-action .image,
+.home-about-images .call-to-action .image {
     top: 20px;
     left: 20px;
     right: 20px;
     bottom: 20px;
   }
 }
-.home-call-to-action .call-to-action .title {
+.home-call-to-action .call-to-action .title,
+.home-about-images .call-to-action .title {
   font-size: 28px;
   position: absolute;
   bottom: 45px;
@@ -467,48 +497,59 @@ body {
   font-family: "Fredericka the Great", sans-serif;
 }
 @media (max-width: 1440px) {
-  .home-call-to-action .call-to-action .title {
+  .home-call-to-action .call-to-action .title,
+.home-about-images .call-to-action .title {
     font-size: 20px;
   }
 }
 @media (max-width: 992px) {
-  .home-call-to-action .call-to-action .title {
+  .home-call-to-action .call-to-action .title,
+.home-about-images .call-to-action .title {
     left: 0;
     right: 0;
     bottom: -10%;
   }
 }
 @media (max-width: 768px) {
-  .home-call-to-action .call-to-action .title {
+  .home-call-to-action .call-to-action .title,
+.home-about-images .call-to-action .title {
     bottom: 45px;
     left: 50%;
     right: -15px;
   }
 }
-.home-call-to-action .call-to-action.second {
+.home-call-to-action .call-to-action.second,
+.home-about-images .call-to-action.second {
   background-color: #5DA0AA;
 }
-.home-call-to-action .call-to-action.second .image {
+.home-call-to-action .call-to-action.second .image,
+.home-about-images .call-to-action.second .image {
   background-image: url("../../images/call-to-action-2.jpg");
 }
-.home-call-to-action .call-to-action.second .title {
+.home-call-to-action .call-to-action.second .title,
+.home-about-images .call-to-action.second .title {
   background-color: #223A47;
 }
-.home-call-to-action .call-to-action.third {
+.home-call-to-action .call-to-action.third,
+.home-about-images .call-to-action.third {
   background-color: #223A47;
 }
-.home-call-to-action .call-to-action.third .image {
+.home-call-to-action .call-to-action.third .image,
+.home-about-images .call-to-action.third .image {
   background-image: url("../../images/call-to-action-3.jpg");
 }
-.home-call-to-action .call-to-action.third .title {
+.home-call-to-action .call-to-action.third .title,
+.home-about-images .call-to-action.third .title {
   background-color: #F27257;
 }
-.home-call-to-action .call-to-action:hover .title {
+.home-call-to-action .call-to-action:hover .title,
+.home-about-images .call-to-action:hover .title {
   left: 0;
   background-color: rgba(255, 255, 255, 0.85);
   color: #223A47;
 }
-.home-call-to-action .call-to-action:hover .image {
+.home-call-to-action .call-to-action:hover .image,
+.home-about-images .call-to-action:hover .image {
   top: 5px;
   bottom: 5px;
   left: 5px;
@@ -628,11 +669,17 @@ body {
   padding-bottom: 300px;
   margin-top: 0;
 }
+@media (max-width: 1440px) {
+  .home-welcome.home-about,
+.home-about.home-about {
+    padding-bottom: 250px;
+  }
+}
 @media (max-width: 992px) {
   .home-welcome.home-about,
 .home-about.home-about {
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
   }
 }
 @media (max-width: 768px) {
@@ -645,7 +692,7 @@ body {
 @media (max-width: 576px) {
   .home-welcome.home-about,
 .home-about.home-about {
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 100px;
   }
 }

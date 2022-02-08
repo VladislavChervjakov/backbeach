@@ -143,5 +143,27 @@ get_header();
     </div>
 </div>
 
+<div class="home-about-images">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="call-to-action">
+                    <div class="image"></div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="call-to-action second">
+                    <div class="image"></div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="call-to-action third">
+                    <div class="image"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
 get_footer();

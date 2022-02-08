@@ -347,7 +347,21 @@ body
       font-size: 36px
 
 // home call to action
-.home-call-to-action
+.home-call-to-action,
+.home-about-images
+
+  &.home-about-images
+    transform: translateY(-75%)
+
+    @media(max-width: $xl)
+      transform: translateY(-100%)
+
+    @media(max-width: $lg)
+      transform: translateY(-115%)
+
+    @media(max-width: $md)
+      display: none
+      transform: translateY(0)
 
   @media(max-width: $md)
     text-align: center
@@ -527,16 +541,19 @@ body
     padding-bottom: 300px
     margin-top: 0
 
+    @media(max-width: $xl)
+      padding-bottom: 250px
+
     @media(max-width: $lg)
       padding-top: 100px
-      padding-bottom: 150px
+      padding-bottom: 200px
 
     @media(max-width: $md)
       padding-top: 75px
       padding-bottom: 125px
 
     @media(max-width: $sm)
-      padding-top: 50px
+      padding-top: 75px
       padding-bottom: 100px
 
     h2
