@@ -184,5 +184,26 @@ get_header();
     </div>
 </div>
 
+<div class="home-about">
+        <div class="bg-image"></div>
+        <div class="title-holder">
+            <div class="container">
+                <h2>
+                    <span>Sign Up</span>
+                    Subscribe to our email newsletter
+                </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-11">
+                    fdfdfdf
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <?php
 get_footer();
