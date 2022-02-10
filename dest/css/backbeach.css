@@ -407,6 +407,8 @@ body {
 .home-call-to-action.home-about-images,
 .home-about-images.home-about-images {
   transform: translateY(-75%);
+  position: relative;
+  z-index: 500;
 }
 @media (max-width: 1440px) {
   .home-call-to-action.home-about-images,
@@ -954,4 +956,48 @@ body {
   .home-news .button {
     margin-top: 10px;
   }
+}
+
+.home-testimonials {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-top: -400px;
+}
+.home-testimonials h2 {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 72px;
+}
+.home-testimonials .testimonial-holder {
+  padding: 60px;
+  background: #F27257;
+  color: #fff;
+  margin-top: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2;
+  border: 2px dashed #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+.home-testimonials .separator {
+  height: 1px;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.home-testimonials .author {
+  font-family: "Fredericka the Great", sans-serif;
+  font-size: 30px;
+}
+.home-testimonials .bg-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../images/testimonials-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }

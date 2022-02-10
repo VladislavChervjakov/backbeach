@@ -165,5 +165,24 @@ get_header();
     </div>
 </div>
 
+<div class="home-testimonials">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-7">
+                <h2>Happy Customers</h2>
+                <div class="testimonial-holder">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos in necessitatibus non quaerat unde
+                        voluptate voluptatibus, voluptatum! Blanditiis consequatur excepturi exercitationem iure perferendis
+                        voluptate!</p>
+                    <div class="separator"></div>
+                    <div class="author">Saad Ulde</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
 get_footer();
