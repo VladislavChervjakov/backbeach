@@ -184,7 +184,7 @@ get_header();
     </div>
 </div>
 
-<div class="home-about">
+<div class="home-subscribe">
         <div class="bg-image"></div>
         <div class="title-holder">
             <div class="container">
@@ -198,7 +198,7 @@ get_header();
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-11">
-                    fdfdfdf
+                    <?php echo do_shortcode( '[contact-form-7 id="21" title="Newsletter Subscriptions"]' ) ?>
                 </div>
             </div>
         </div>

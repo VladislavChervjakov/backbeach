@@ -684,6 +684,86 @@ body {
 .home-about.home-subscribe,
 .home-subscribe.home-subscribe {
   background: #223A47;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  border-top: 2px dashed #fff;
+  border-bottom: 2px dashed #fff;
+}
+@media (max-width: 1440px) {
+  .home-welcome.home-subscribe,
+.home-about.home-subscribe,
+.home-subscribe.home-subscribe {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .home-welcome.home-subscribe,
+.home-about.home-subscribe,
+.home-subscribe.home-subscribe {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .home-welcome.home-subscribe,
+.home-about.home-subscribe,
+.home-subscribe.home-subscribe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.home-welcome.home-subscribe::before,
+.home-about.home-subscribe::before,
+.home-subscribe.home-subscribe::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url("../../images/subscribe-bg.jpg") center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.home-welcome.home-subscribe .container,
+.home-about.home-subscribe .container,
+.home-subscribe.home-subscribe .container {
+  position: relative;
+}
+.home-welcome h2 span,
+.home-about h2 span,
+.home-subscribe h2 span {
+  color: #5DA0AA;
+}
+.home-welcome input,
+.home-about input,
+.home-subscribe input {
+  width: 100%;
+  font-size: 24px;
+  padding: 0.75em 1em;
+  color: #000;
+  background: #fff;
+  border: 2px dashed #5DA0AA;
+  height: auto;
+  min-height: auto;
+  line-height: initial;
+}
+.home-welcome input[type=submit],
+.home-about input[type=submit],
+.home-subscribe input[type=submit] {
+  background: #F27257;
+  color: #fff;
+}
+.home-welcome input[type=submit]:hover,
+.home-about input[type=submit]:hover,
+.home-subscribe input[type=submit]:hover {
+  background: #FFB5A6;
 }
 .home-welcome.home-about,
 .home-about.home-about,
