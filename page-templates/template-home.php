@@ -185,24 +185,71 @@ get_header();
 </div>
 
 <div class="home-subscribe">
-        <div class="bg-image"></div>
-        <div class="title-holder">
-            <div class="container">
-                <h2>
-                    <span>Sign Up</span>
-                    Subscribe to our email newsletter
-                </h2>
+    <div class="bg-image"></div>
+    <div class="title-holder">
+        <div class="container">
+            <h2>
+                <span>Sign Up</span>
+                Subscribe to our email newsletter
+            </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11">
+                <?php echo do_shortcode( '[contact-form-7 id="21" title="Newsletter Subscriptions"]' ) ?>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="home-social">
+    <div class="title-holder">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-11">
-                    <?php echo do_shortcode( '[contact-form-7 id="21" title="Newsletter Subscriptions"]' ) ?>
+            <h2>
+                <span>Socials</span>
+                Follow us on facebook & instagram
+            </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-11">
+                <div class="facebook-holder">
+                    <div class="title">
+                        <i class="fa fa-facebook-square"></i>
+                        What`s new on facebook
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/call-to-action-1.jpg"
+                                 alt="News Item" width="100%">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content">
+                                <div class="meta-data">
+                                    <div class="date"><i class="fa fa-calendar"></i> Posted 31 Jan 2020</div>
+                                    <div class="likes"><i class="fa fa-thumbs-up"></i> 24 Likes</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eligendi error
+                                    esse fugit ipsam molestiae molestias nam quasi veniam vero.</p>
+                                <a href="#" class="button">Read on facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-holder">
+                    <div class="title">
+                        <i class="fa fa-instagram"></i>
+                        @backbeachcafe
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 <?php
