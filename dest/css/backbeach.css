@@ -562,15 +562,65 @@ body {
 .home-welcome,
 .home-about,
 .home-subscribe,
-.home-social {
+.home-social,
+#wrapper-footer {
   margin-top: 120px;
   margin-bottom: 120px;
+}
+.home-welcome#wrapper-footer,
+.home-about#wrapper-footer,
+.home-subscribe#wrapper-footer,
+.home-social#wrapper-footer,
+#wrapper-footer#wrapper-footer {
+  position: relative;
+}
+.home-welcome#wrapper-footer .container,
+.home-about#wrapper-footer .container,
+.home-subscribe#wrapper-footer .container,
+.home-social#wrapper-footer .container,
+#wrapper-footer#wrapper-footer .container {
+  position: relative;
+}
+.home-welcome#wrapper-footer .bg-image,
+.home-about#wrapper-footer .bg-image,
+.home-subscribe#wrapper-footer .bg-image,
+.home-social#wrapper-footer .bg-image,
+#wrapper-footer#wrapper-footer .bg-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../images/news-bg.jpg");
+  background-size: cover;
+}
+.home-welcome#wrapper-footer .bg-image .top-overlay,
+.home-about#wrapper-footer .bg-image .top-overlay,
+.home-subscribe#wrapper-footer .bg-image .top-overlay,
+.home-social#wrapper-footer .bg-image .top-overlay,
+#wrapper-footer#wrapper-footer .bg-image .top-overlay {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.home-welcome#wrapper-footer .bg-image .bottom-overlay,
+.home-about#wrapper-footer .bg-image .bottom-overlay,
+.home-subscribe#wrapper-footer .bg-image .bottom-overlay,
+.home-social#wrapper-footer .bg-image .bottom-overlay,
+#wrapper-footer#wrapper-footer .bg-image .bottom-overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: -3px;
 }
 @media (max-width: 768px) {
   .home-welcome,
 .home-about,
 .home-subscribe,
-.home-social {
+.home-social,
+#wrapper-footer {
     padding-bottom: 60px;
     margin-bottom: 60px;
   }
@@ -579,7 +629,8 @@ body {
   .home-welcome,
 .home-about,
 .home-subscribe,
-.home-social {
+.home-social,
+#wrapper-footer {
     padding-bottom: 30px;
     margin-bottom: 30px;
   }
@@ -587,7 +638,8 @@ body {
 .home-welcome .title-holder,
 .home-about .title-holder,
 .home-subscribe .title-holder,
-.home-social .title-holder {
+.home-social .title-holder,
+#wrapper-footer .title-holder {
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
   margin-bottom: 60px;
@@ -596,7 +648,8 @@ body {
   .home-welcome .title-holder,
 .home-about .title-holder,
 .home-subscribe .title-holder,
-.home-social .title-holder {
+.home-social .title-holder,
+#wrapper-footer .title-holder {
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
@@ -605,7 +658,8 @@ body {
   .home-welcome .title-holder,
 .home-about .title-holder,
 .home-subscribe .title-holder,
-.home-social .title-holder {
+.home-social .title-holder,
+#wrapper-footer .title-holder {
     padding-bottom: 15px;
     margin-bottom: 15px;
   }
@@ -613,7 +667,8 @@ body {
 .home-welcome h2,
 .home-about h2,
 .home-subscribe h2,
-.home-social h2 {
+.home-social h2,
+#wrapper-footer h2 {
   line-height: 1;
   font-family: "Fredericka the Great", sans-serif;
   font-size: 72px;
@@ -621,7 +676,8 @@ body {
 .home-welcome h2 span,
 .home-about h2 span,
 .home-subscribe h2 span,
-.home-social h2 span {
+.home-social h2 span,
+#wrapper-footer h2 span {
   font-family: "Pacifico", sans-serif;
   font-size: 160px;
   display: block;
@@ -632,7 +688,8 @@ body {
   .home-welcome h2 span,
 .home-about h2 span,
 .home-subscribe h2 span,
-.home-social h2 span {
+.home-social h2 span,
+#wrapper-footer h2 span {
     font-size: 120px;
     transform: translate(120px, -25px);
   }
@@ -641,7 +698,8 @@ body {
   .home-welcome h2 span,
 .home-about h2 span,
 .home-subscribe h2 span,
-.home-social h2 span {
+.home-social h2 span,
+#wrapper-footer h2 span {
     font-size: 60px;
     transform: translate(60px, 0px);
   }
@@ -650,7 +708,8 @@ body {
   .home-welcome h2 span,
 .home-about h2 span,
 .home-subscribe h2 span,
-.home-social h2 span {
+.home-social h2 span,
+#wrapper-footer h2 span {
     font-size: 48px;
     transform: translate(30px, 0px);
   }
@@ -659,7 +718,8 @@ body {
   .home-welcome h2,
 .home-about h2,
 .home-subscribe h2,
-.home-social h2 {
+.home-social h2,
+#wrapper-footer h2 {
     font-size: 60px;
   }
 }
@@ -667,14 +727,16 @@ body {
   .home-welcome h2,
 .home-about h2,
 .home-subscribe h2,
-.home-social h2 {
+.home-social h2,
+#wrapper-footer h2 {
     font-size: 36px;
   }
 }
 .home-welcome p,
 .home-about p,
 .home-subscribe p,
-.home-social p {
+.home-social p,
+#wrapper-footer p {
   line-height: 2em;
   padding-bottom: 1em;
   font-weight: 300;
@@ -682,7 +744,8 @@ body {
 .home-welcome p.tagline,
 .home-about p.tagline,
 .home-subscribe p.tagline,
-.home-social p.tagline {
+.home-social p.tagline,
+#wrapper-footer p.tagline {
   font-size: 24px;
   color: #5DA0AA;
   font-weight: 600;
@@ -692,14 +755,16 @@ body {
   .home-welcome p.tagline,
 .home-about p.tagline,
 .home-subscribe p.tagline,
-.home-social p.tagline {
+.home-social p.tagline,
+#wrapper-footer p.tagline {
     font-size: 18px;
   }
 }
 .home-welcome.home-subscribe,
 .home-about.home-subscribe,
 .home-subscribe.home-subscribe,
-.home-social.home-subscribe {
+.home-social.home-subscribe,
+#wrapper-footer.home-subscribe {
   background: #223A47;
   color: #fff;
   margin-top: 0;
@@ -714,7 +779,8 @@ body {
   .home-welcome.home-subscribe,
 .home-about.home-subscribe,
 .home-subscribe.home-subscribe,
-.home-social.home-subscribe {
+.home-social.home-subscribe,
+#wrapper-footer.home-subscribe {
     padding-top: 75px;
     padding-bottom: 75px;
   }
@@ -723,7 +789,8 @@ body {
   .home-welcome.home-subscribe,
 .home-about.home-subscribe,
 .home-subscribe.home-subscribe,
-.home-social.home-subscribe {
+.home-social.home-subscribe,
+#wrapper-footer.home-subscribe {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -732,7 +799,8 @@ body {
   .home-welcome.home-subscribe,
 .home-about.home-subscribe,
 .home-subscribe.home-subscribe,
-.home-social.home-subscribe {
+.home-social.home-subscribe,
+#wrapper-footer.home-subscribe {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -740,7 +808,8 @@ body {
 .home-welcome.home-subscribe::before,
 .home-about.home-subscribe::before,
 .home-subscribe.home-subscribe::before,
-.home-social.home-subscribe::before {
+.home-social.home-subscribe::before,
+#wrapper-footer.home-subscribe::before {
   content: "";
   display: block;
   position: absolute;
@@ -755,19 +824,22 @@ body {
 .home-welcome.home-subscribe .container,
 .home-about.home-subscribe .container,
 .home-subscribe.home-subscribe .container,
-.home-social.home-subscribe .container {
+.home-social.home-subscribe .container,
+#wrapper-footer.home-subscribe .container {
   position: relative;
 }
 .home-welcome.home-subscribe h2 span,
 .home-about.home-subscribe h2 span,
 .home-subscribe.home-subscribe h2 span,
-.home-social.home-subscribe h2 span {
+.home-social.home-subscribe h2 span,
+#wrapper-footer.home-subscribe h2 span {
   color: #5DA0AA;
 }
 .home-welcome.home-subscribe input,
 .home-about.home-subscribe input,
 .home-subscribe.home-subscribe input,
-.home-social.home-subscribe input {
+.home-social.home-subscribe input,
+#wrapper-footer.home-subscribe input {
   width: 100%;
   font-size: 24px;
   padding: 0.75em 1em;
@@ -782,7 +854,8 @@ body {
   .home-welcome.home-subscribe input,
 .home-about.home-subscribe input,
 .home-subscribe.home-subscribe input,
-.home-social.home-subscribe input {
+.home-social.home-subscribe input,
+#wrapper-footer.home-subscribe input {
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -791,14 +864,16 @@ body {
   .home-welcome.home-subscribe input,
 .home-about.home-subscribe input,
 .home-subscribe.home-subscribe input,
-.home-social.home-subscribe input {
+.home-social.home-subscribe input,
+#wrapper-footer.home-subscribe input {
     font-size: 18px;
   }
 }
 .home-welcome.home-subscribe input[type=submit],
 .home-about.home-subscribe input[type=submit],
 .home-subscribe.home-subscribe input[type=submit],
-.home-social.home-subscribe input[type=submit] {
+.home-social.home-subscribe input[type=submit],
+#wrapper-footer.home-subscribe input[type=submit] {
   background: #F27257;
   font-family: "Fredericka the Great", sans-serif;
   color: #fff;
@@ -806,13 +881,15 @@ body {
 .home-welcome.home-subscribe input[type=submit]:hover,
 .home-about.home-subscribe input[type=submit]:hover,
 .home-subscribe.home-subscribe input[type=submit]:hover,
-.home-social.home-subscribe input[type=submit]:hover {
+.home-social.home-subscribe input[type=submit]:hover,
+#wrapper-footer.home-subscribe input[type=submit]:hover {
   background: #FFB5A6;
 }
 .home-welcome.home-about,
 .home-about.home-about,
 .home-subscribe.home-about,
-.home-social.home-about {
+.home-social.home-about,
+#wrapper-footer.home-about {
   position: relative;
   padding-top: 150px;
   padding-bottom: 300px;
@@ -822,7 +899,8 @@ body {
   .home-welcome.home-about,
 .home-about.home-about,
 .home-subscribe.home-about,
-.home-social.home-about {
+.home-social.home-about,
+#wrapper-footer.home-about {
     padding-bottom: 250px;
   }
 }
@@ -830,7 +908,8 @@ body {
   .home-welcome.home-about,
 .home-about.home-about,
 .home-subscribe.home-about,
-.home-social.home-about {
+.home-social.home-about,
+#wrapper-footer.home-about {
     padding-top: 100px;
     padding-bottom: 200px;
   }
@@ -839,7 +918,8 @@ body {
   .home-welcome.home-about,
 .home-about.home-about,
 .home-subscribe.home-about,
-.home-social.home-about {
+.home-social.home-about,
+#wrapper-footer.home-about {
     padding-top: 75px;
     padding-bottom: 125px;
   }
@@ -848,7 +928,8 @@ body {
   .home-welcome.home-about,
 .home-about.home-about,
 .home-subscribe.home-about,
-.home-social.home-about {
+.home-social.home-about,
+#wrapper-footer.home-about {
     padding-top: 75px;
     padding-bottom: 100px;
   }
@@ -856,40 +937,46 @@ body {
 .home-welcome.home-about h2,
 .home-about.home-about h2,
 .home-subscribe.home-about h2,
-.home-social.home-about h2 {
+.home-social.home-about h2,
+#wrapper-footer.home-about h2 {
   color: #fff;
   position: relative;
 }
 .home-welcome.home-about .title-holder,
 .home-about.home-about .title-holder,
 .home-subscribe.home-about .title-holder,
-.home-social.home-about .title-holder {
+.home-social.home-about .title-holder,
+#wrapper-footer.home-about .title-holder {
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
   position: relative;
 }
 .home-welcome.home-about .title-holder span,
 .home-about.home-about .title-holder span,
 .home-subscribe.home-about .title-holder span,
-.home-social.home-about .title-holder span {
+.home-social.home-about .title-holder span,
+#wrapper-footer.home-about .title-holder span {
   color: #5DA0AA;
   transform: translate(100px, -25px);
 }
 .home-welcome.home-about p,
 .home-about.home-about p,
 .home-subscribe.home-about p,
-.home-social.home-about p {
+.home-social.home-about p,
+#wrapper-footer.home-about p {
   color: #fff;
 }
 .home-welcome.home-about p.tagline,
 .home-about.home-about p.tagline,
 .home-subscribe.home-about p.tagline,
-.home-social.home-about p.tagline {
+.home-social.home-about p.tagline,
+#wrapper-footer.home-about p.tagline {
   color: #5DA0AA;
 }
 .home-welcome.home-about .bg-image,
 .home-about.home-about .bg-image,
 .home-subscribe.home-about .bg-image,
-.home-social.home-about .bg-image {
+.home-social.home-about .bg-image,
+#wrapper-footer.home-about .bg-image {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -901,7 +988,8 @@ body {
 .home-welcome.home-about .bg-image .top-overlay,
 .home-about.home-about .bg-image .top-overlay,
 .home-subscribe.home-about .bg-image .top-overlay,
-.home-social.home-about .bg-image .top-overlay {
+.home-social.home-about .bg-image .top-overlay,
+#wrapper-footer.home-about .bg-image .top-overlay {
   position: absolute;
   top: -1px;
   left: 0;
@@ -911,7 +999,8 @@ body {
 .home-welcome.home-about .bg-image .bottom-overlay,
 .home-about.home-about .bg-image .bottom-overlay,
 .home-subscribe.home-about .bg-image .bottom-overlay,
-.home-social.home-about .bg-image .bottom-overlay {
+.home-social.home-about .bg-image .bottom-overlay,
+#wrapper-footer.home-about .bg-image .bottom-overlay {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -920,25 +1009,29 @@ body {
 .home-welcome.home-about .button,
 .home-about.home-about .button,
 .home-subscribe.home-about .button,
-.home-social.home-about .button {
+.home-social.home-about .button,
+#wrapper-footer.home-about .button {
   background: #F27257;
 }
 .home-welcome.home-about .button:hover,
 .home-about.home-about .button:hover,
 .home-subscribe.home-about .button:hover,
-.home-social.home-about .button:hover {
+.home-social.home-about .button:hover,
+#wrapper-footer.home-about .button:hover {
   background: #ea3812;
 }
 .home-welcome .instagram-holder,
 .home-about .instagram-holder,
 .home-subscribe .instagram-holder,
-.home-social .instagram-holder {
+.home-social .instagram-holder,
+#wrapper-footer .instagram-holder {
   margin-top: 75px;
 }
 .home-welcome .instagram-holder .title,
 .home-about .instagram-holder .title,
 .home-subscribe .instagram-holder .title,
-.home-social .instagram-holder .title {
+.home-social .instagram-holder .title,
+#wrapper-footer .instagram-holder .title {
   font-size: 60px;
   margin-bottom: 60px;
   color: #223A47;
@@ -948,7 +1041,8 @@ body {
   .home-welcome .instagram-holder .title,
 .home-about .instagram-holder .title,
 .home-subscribe .instagram-holder .title,
-.home-social .instagram-holder .title {
+.home-social .instagram-holder .title,
+#wrapper-footer .instagram-holder .title {
     font-size: 48px;
     margin-bottom: 45px;
   }
@@ -957,7 +1051,8 @@ body {
   .home-welcome .instagram-holder .title,
 .home-about .instagram-holder .title,
 .home-subscribe .instagram-holder .title,
-.home-social .instagram-holder .title {
+.home-social .instagram-holder .title,
+#wrapper-footer .instagram-holder .title {
     font-size: 36px;
     margin-bottom: 30px;
   }
@@ -966,21 +1061,24 @@ body {
   .home-welcome .instagram-holder .title,
 .home-about .instagram-holder .title,
 .home-subscribe .instagram-holder .title,
-.home-social .instagram-holder .title {
+.home-social .instagram-holder .title,
+#wrapper-footer .instagram-holder .title {
     font-size: 30px;
   }
 }
 .home-welcome .instagram-holder .title .fa,
 .home-about .instagram-holder .title .fa,
 .home-subscribe .instagram-holder .title .fa,
-.home-social .instagram-holder .title .fa {
+.home-social .instagram-holder .title .fa,
+#wrapper-footer .instagram-holder .title .fa {
   color: #F27257;
   margin-right: 0.5em;
 }
 .home-welcome .facebook-holder,
 .home-about .facebook-holder,
 .home-subscribe .facebook-holder,
-.home-social .facebook-holder {
+.home-social .facebook-holder,
+#wrapper-footer .facebook-holder {
   border: 2px dashed #F27257;
   padding: 60px;
   border-radius: 15px;
@@ -989,14 +1087,16 @@ body {
   .home-welcome .facebook-holder,
 .home-about .facebook-holder,
 .home-subscribe .facebook-holder,
-.home-social .facebook-holder {
+.home-social .facebook-holder,
+#wrapper-footer .facebook-holder {
     padding: 30px;
   }
 }
 .home-welcome .facebook-holder .title,
 .home-about .facebook-holder .title,
 .home-subscribe .facebook-holder .title,
-.home-social .facebook-holder .title {
+.home-social .facebook-holder .title,
+#wrapper-footer .facebook-holder .title {
   font-size: 60px;
   margin-bottom: 60px;
   color: #F27257;
@@ -1006,7 +1106,8 @@ body {
   .home-welcome .facebook-holder .title,
 .home-about .facebook-holder .title,
 .home-subscribe .facebook-holder .title,
-.home-social .facebook-holder .title {
+.home-social .facebook-holder .title,
+#wrapper-footer .facebook-holder .title {
     font-size: 48px;
     margin-bottom: 45px;
   }
@@ -1015,7 +1116,8 @@ body {
   .home-welcome .facebook-holder .title,
 .home-about .facebook-holder .title,
 .home-subscribe .facebook-holder .title,
-.home-social .facebook-holder .title {
+.home-social .facebook-holder .title,
+#wrapper-footer .facebook-holder .title {
     font-size: 36px;
     margin-bottom: 30px;
   }
@@ -1024,14 +1126,16 @@ body {
   .home-welcome .facebook-holder .title,
 .home-about .facebook-holder .title,
 .home-subscribe .facebook-holder .title,
-.home-social .facebook-holder .title {
+.home-social .facebook-holder .title,
+#wrapper-footer .facebook-holder .title {
     font-size: 30px;
   }
 }
 .home-welcome .facebook-holder .title .fa,
 .home-about .facebook-holder .title .fa,
 .home-subscribe .facebook-holder .title .fa,
-.home-social .facebook-holder .title .fa {
+.home-social .facebook-holder .title .fa,
+#wrapper-footer .facebook-holder .title .fa {
   color: #223A47;
   margin-right: 0.5em;
 }
@@ -1039,21 +1143,24 @@ body {
   .home-welcome .facebook-holder .content,
 .home-about .facebook-holder .content,
 .home-subscribe .facebook-holder .content,
-.home-social .facebook-holder .content {
+.home-social .facebook-holder .content,
+#wrapper-footer .facebook-holder .content {
     margin-top: 30px;
   }
 }
 .home-welcome .facebook-holder .content p,
 .home-about .facebook-holder .content p,
 .home-subscribe .facebook-holder .content p,
-.home-social .facebook-holder .content p {
+.home-social .facebook-holder .content p,
+#wrapper-footer .facebook-holder .content p {
   font-weight: 400;
   margin-bottom: 30px;
 }
 .home-welcome .facebook-holder .content .meta-data,
 .home-about .facebook-holder .content .meta-data,
 .home-subscribe .facebook-holder .content .meta-data,
-.home-social .facebook-holder .content .meta-data {
+.home-social .facebook-holder .content .meta-data,
+#wrapper-footer .facebook-holder .content .meta-data {
   display: flex;
   border-bottom: 2px dashed #5DA0AA;
   padding-bottom: 30px;
@@ -1066,7 +1173,9 @@ body {
 .home-subscribe .facebook-holder .content .meta-data .date,
 .home-subscribe .facebook-holder .content .meta-data .likes,
 .home-social .facebook-holder .content .meta-data .date,
-.home-social .facebook-holder .content .meta-data .likes {
+.home-social .facebook-holder .content .meta-data .likes,
+#wrapper-footer .facebook-holder .content .meta-data .date,
+#wrapper-footer .facebook-holder .content .meta-data .likes {
   flex: 1;
 }
 .home-welcome .facebook-holder .content .meta-data .date .fa,
@@ -1076,7 +1185,9 @@ body {
 .home-subscribe .facebook-holder .content .meta-data .date .fa,
 .home-subscribe .facebook-holder .content .meta-data .likes .fa,
 .home-social .facebook-holder .content .meta-data .date .fa,
-.home-social .facebook-holder .content .meta-data .likes .fa {
+.home-social .facebook-holder .content .meta-data .likes .fa,
+#wrapper-footer .facebook-holder .content .meta-data .date .fa,
+#wrapper-footer .facebook-holder .content .meta-data .likes .fa {
   color: #5DA0AA;
   font-size: 1.5em;
   margin-right: 0.25em;
