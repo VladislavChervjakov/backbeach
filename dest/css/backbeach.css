@@ -6,7 +6,6 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   line-height: 1.25;
-  height: 8000px;
   overflow-x: hidden;
 }
 
@@ -573,12 +572,120 @@ body {
 .home-social#wrapper-footer,
 #wrapper-footer#wrapper-footer {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.home-welcome#wrapper-footer .copyright,
+.home-about#wrapper-footer .copyright,
+.home-subscribe#wrapper-footer .copyright,
+.home-social#wrapper-footer .copyright,
+#wrapper-footer#wrapper-footer .copyright {
+  margin-top: 45px;
+}
+@media (max-width: 1440px) {
+  .home-welcome#wrapper-footer,
+.home-about#wrapper-footer,
+.home-subscribe#wrapper-footer,
+.home-social#wrapper-footer,
+#wrapper-footer#wrapper-footer {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .home-welcome#wrapper-footer,
+.home-about#wrapper-footer,
+.home-subscribe#wrapper-footer,
+.home-social#wrapper-footer,
+#wrapper-footer#wrapper-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .home-welcome#wrapper-footer,
+.home-about#wrapper-footer,
+.home-subscribe#wrapper-footer,
+.home-social#wrapper-footer,
+#wrapper-footer#wrapper-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.home-welcome#wrapper-footer input,
+.home-welcome#wrapper-footer textarea,
+.home-about#wrapper-footer input,
+.home-about#wrapper-footer textarea,
+.home-subscribe#wrapper-footer input,
+.home-subscribe#wrapper-footer textarea,
+.home-social#wrapper-footer input,
+.home-social#wrapper-footer textarea,
+#wrapper-footer#wrapper-footer input,
+#wrapper-footer#wrapper-footer textarea {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 24px;
+  padding: 0.75em 1em;
+  color: #000;
+  background: #fff;
+  border: 2px dashed #5DA0AA;
+  height: auto;
+  min-height: auto;
+  line-height: initial;
+}
+@media (max-width: 1440px) {
+  .home-welcome#wrapper-footer input,
+.home-welcome#wrapper-footer textarea,
+.home-about#wrapper-footer input,
+.home-about#wrapper-footer textarea,
+.home-subscribe#wrapper-footer input,
+.home-subscribe#wrapper-footer textarea,
+.home-social#wrapper-footer input,
+.home-social#wrapper-footer textarea,
+#wrapper-footer#wrapper-footer input,
+#wrapper-footer#wrapper-footer textarea {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .home-welcome#wrapper-footer input,
+.home-welcome#wrapper-footer textarea,
+.home-about#wrapper-footer input,
+.home-about#wrapper-footer textarea,
+.home-subscribe#wrapper-footer input,
+.home-subscribe#wrapper-footer textarea,
+.home-social#wrapper-footer input,
+.home-social#wrapper-footer textarea,
+#wrapper-footer#wrapper-footer input,
+#wrapper-footer#wrapper-footer textarea {
+    font-size: 18px;
+  }
+}
+.home-welcome#wrapper-footer input[type=submit],
+.home-welcome#wrapper-footer textarea[type=submit],
+.home-about#wrapper-footer input[type=submit],
+.home-about#wrapper-footer textarea[type=submit],
+.home-subscribe#wrapper-footer input[type=submit],
+.home-subscribe#wrapper-footer textarea[type=submit],
+.home-social#wrapper-footer input[type=submit],
+.home-social#wrapper-footer textarea[type=submit],
+#wrapper-footer#wrapper-footer input[type=submit],
+#wrapper-footer#wrapper-footer textarea[type=submit] {
+  background: #F27257;
+  font-family: "Fredericka the Great", sans-serif;
+  color: #fff;
 }
 .home-welcome#wrapper-footer .container,
+.home-welcome#wrapper-footer .title-holder,
 .home-about#wrapper-footer .container,
+.home-about#wrapper-footer .title-holder,
 .home-subscribe#wrapper-footer .container,
+.home-subscribe#wrapper-footer .title-holder,
 .home-social#wrapper-footer .container,
-#wrapper-footer#wrapper-footer .container {
+.home-social#wrapper-footer .title-holder,
+#wrapper-footer#wrapper-footer .container,
+#wrapper-footer#wrapper-footer .title-holder {
   position: relative;
 }
 .home-welcome#wrapper-footer .bg-image,
@@ -592,7 +699,7 @@ body {
   left: 0;
   right: 0;
   background-image: url("../../images/news-bg.jpg");
-  background-size: cover;
+  background-position: top center;
 }
 .home-welcome#wrapper-footer .bg-image .top-overlay,
 .home-about#wrapper-footer .bg-image .top-overlay,
@@ -1452,4 +1559,11 @@ body {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.footer-warning {
+  background: #223A47;
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
