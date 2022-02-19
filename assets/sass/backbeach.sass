@@ -1021,6 +1021,13 @@ body
     font-family: 'Fredericka the Great', sans-serif
     font-size: 72px
 
+    @media(max-width: $lg)
+      font-size: 60px
+
+
+    @media(max-width: $md)
+      font-size: 36px
+
   .testimonial-holder
     padding: 60px
     background: $secondary-color
@@ -1032,6 +1039,17 @@ body
     line-height: 2
     border: 2px dashed #fff
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25)
+
+    @media(max-width: $lg)
+      margin-top: 40px
+      font-size: 20px
+      padding: 45px
+
+    @media(max-width: $md)
+      margin-top: 30px
+      font-size: 18px
+      padding: 30px
+      line-height: 1.5
 
   .separator
     height: 1px

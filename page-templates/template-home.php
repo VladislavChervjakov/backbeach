@@ -12,7 +12,7 @@ get_header();
 ?>
 <div class="home-banner wow fadeIn" data-wow-duration="6s">
     <div class="container">
-        <h1 class="wow fadeInUp" data-wow-delay="1s">A Dining Experience</h1>
+        <h1 class="wow fadeInUp" data-wow-delay="0.25s">A Dining Experience</h1>
     </div>
 </div>
 
