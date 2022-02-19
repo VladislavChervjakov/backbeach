@@ -1,3 +1,7 @@
 "use strict";
 
-console.log('Its fucking working');
+jQuery(document).ready(function () {
+  new WOW({
+    mobile: false
+  }).init();
+});

@@ -1,1 +1,5 @@
-console.log( 'Its fucking working' )
+jQuery( document ).ready( () => {
+    new WOW( {
+        mobile: false
+    } ).init();
+} );

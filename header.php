@@ -22,12 +22,13 @@ defined( 'ABSPATH' ) || exit;
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-md-4">
-                        <a href="/" class="logo-holder">
+                        <a href="/" class="logo-holder <?php if ( is_front_page() ): ?> wow fadeInDown <?php endif; ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="The Backbeach Logo" width="">
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <div class="reservation-holder">
+                        <div class="reservation-holder
+                        <?php if ( is_front_page() ): ?> wow fadeInDown <?php endif; ?>" data-wow-delay="0.2">
                             <div class="contact-holder">
                                 <a href="#" class="phone">
                                     <i class="fa fa-phone"></i>
@@ -57,7 +58,8 @@ defined( 'ABSPATH' ) || exit;
                             <a href="#" class="reservation-btn">Make a Reservation</a>
                         </div>
                     </div>
-                    <div class="col-">
+                    <div class="col- <?php if ( is_front_page() ): ?> wow fadeInDown <?php endif; ?>"
+                    data-wow-delay="0.5s">
                         <button class="navbar-toggler" type="button"
                                 data-toggle="collapse"
                                 data-target="#navbarNavDropdown"
@@ -77,7 +79,8 @@ defined( 'ABSPATH' ) || exit;
             </div>
         </div>
 
-        <nav id="main-nav" class="navbar navbar-expand-lg">
+        <nav id="main-nav" class="navbar navbar-expand-lg
+            <?php if ( is_front_page() ): ?> wow fadeInDown <?php endif; ?>" data-wow-duration="1.5s">
             <div class="container">
                 <?php
                 wp_nav_menu( [

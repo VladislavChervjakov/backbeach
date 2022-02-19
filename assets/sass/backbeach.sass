@@ -477,9 +477,13 @@ body
     position: relative
     padding-top: 100px
     padding-bottom: 100px
+    margin-bottom: 0
 
     .copyright
-      margin-top: 45px
+      margin-top: 30px
+
+      @media(max-width: $md)
+        margin-top: 15px
 
     @media(max-width: $xl)
       padding-top: 75px
@@ -1056,3 +1060,11 @@ body
   color: #fff
   padding-top: 45px
   padding-bottom: 45px
+
+  h3
+    font-size: 24px
+    font-weight: 800
+
+  img
+    margin-bottom: 15px
+    margin-top: 15px

@@ -15,6 +15,34 @@ final class Enqueue {
 
     public function starter_theme_load_scripts () {
 
+        // load animation libraries
+        wp_enqueue_style(
+            'animate',
+            'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css'
+        );
+
+        // load swiper
+        wp_enqueue_style(
+            'swiper',
+            'https://unpkg.com/swiper@8/swiper-bundle.min.css'
+        );
+
+        // load wow
+        wp_enqueue_script(
+            'wow-js',
+            'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
+            [ 'jquery' ],
+            true
+        );
+
+        // load swiper
+        wp_enqueue_script(
+            'swiper-js',
+            'https://unpkg.com/swiper@8/swiper-bundle.min.js',
+            [ 'jquery' ],
+            true
+        );
+
         // load bootstrap
         wp_enqueue_style(
             'bootstrap',
@@ -48,7 +76,7 @@ final class Enqueue {
         wp_enqueue_script(
             'starter_theme_script',
                get_template_directory_uri() . '/dest/js/starter-theme.js',
-                   [],
+                   [ 'jquery' ],
               '1.0',
           true
         );
