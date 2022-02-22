@@ -91,7 +91,6 @@ body {
 }
 
 #wrapper-navbar {
-  margin-bottom: -360px;
   position: relative;
   z-index: 2000;
 }
@@ -296,6 +295,15 @@ body {
 }
 #wrapper-navbar #menu-primary .menu-item.current-menu-item a {
   color: #F27257;
+}
+
+.home #wrapper-navbar {
+  margin-bottom: -360px;
+}
+@media (max-width: 992px) {
+  .home {
+    margin-bottom: 0;
+  }
 }
 
 .home-banner {

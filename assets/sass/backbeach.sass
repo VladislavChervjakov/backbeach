@@ -93,7 +93,6 @@ body
 
 
 #wrapper-navbar
-  margin-bottom: -360px
   position: relative
   z-index: 2000
 
@@ -265,6 +264,14 @@ body
 
         a
          color: $secondary-color
+
+.home
+
+  #wrapper-navbar
+    margin-bottom: -360px
+
+  @media(max-width: $lg)
+    margin-bottom: 0
 
 // home banner styles
 .home-banner
